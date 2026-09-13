@@ -1,0 +1,6 @@
+Player	Goals	Assists	Yellow_Cards	Red_Cards	Position	Team
+Millie Bright	0	0	5	1	DF	Chelsea
+Erin Cuthbert	3	4	2	0	MF	Chelsea
+Samantha Kerr	10	0	2	0	FW	Chelsea
+Katie McCabe	3	1	5	1	DF	Arsenal
+Chloe Kelly	5	3	3	1	FW	Manchester City
