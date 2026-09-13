@@ -1,0 +1,28 @@
+Gabriel Eze
+Databases Exam
+
+1. SELECT DISTINCT(supplier_id) FROM Item;
+2. SELECT AVG(item_price) FROM Item
+    -> WHERE supplier_id = 628;
+3. SELECT supplier_id, MIN(item_price) FROM Item
+    -> GROUP BY supplier_id
+    -> HAVING supplier_id > 56
+    -> ORDER BY supplier_id;
+4. SELECT supplier_id, item_name, item_sku FROM Item
+    -> ORDER BY item_name DESC
+    -> LIMIT 15;
+5. SELECT item_name, item_price FROM Item
+    -> WHERE item_price > 12.95 AND item_price < 99.99;
+6. SELECT COUNT(item_price) FROM Item
+    -> WHERE item_name LIKE "%soap";
+7. INSERT INTO Item
+    -> VALUES(99, "Sunkist", 789, 1.99);
+8. DESCRIBE Inventory;
+9. SELECT Item.item_name, Item.item_sku, Inventory.quantity_in_stock, Supplier.supplier_name FROM Inventory JOIN Item JOIN Supplier
+    -> WHERE Inventory.item_sku = Item.item_sku AND Item.supplier_id = Supplier.supplier_id;
+10. SELECT item_name, supplier_id FROM Item
+    -> WHERE NOT supplier_id BETWEEN 10 AND 200;
+11. SELECT Item.item_name, Inventory.quantity_in_stock FROM Inventory JOIN Item
+    -> WHERE Inventory.item_sku = Item.item_sku;
+12. SELECT supplier_id, MIN(item_price) FROM Item
+    -> GROUP BY supplier_id;
